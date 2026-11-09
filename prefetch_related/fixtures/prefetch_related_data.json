@@ -1,0 +1,83 @@
+[
+  {
+    "model": "prefetch_related.topping",
+    "pk": 1,
+    "fields": {"name": "Mozzarella"}
+  },
+  {
+    "model": "prefetch_related.topping",
+    "pk": 2,
+    "fields": {"name": "Tomato"}
+  },
+  {
+    "model": "prefetch_related.topping",
+    "pk": 3,
+    "fields": {"name": "Basil"}
+  },
+  {
+    "model": "prefetch_related.topping",
+    "pk": 4,
+    "fields": {"name": "Pepperoni"}
+  },
+  {
+    "model": "prefetch_related.topping",
+    "pk": 5,
+    "fields": {"name": "Mushroom"}
+  },
+  {
+    "model": "prefetch_related.pizza",
+    "pk": 1,
+    "fields": {
+      "name": "Margherita",
+      "toppings": [1, 2, 3]
+    }
+  },
+  {
+    "model": "prefetch_related.pizza",
+    "pk": 2,
+    "fields": {
+      "name": "Pepperoni Classic",
+      "toppings": [1, 2, 4]
+    }
+  },
+  {
+    "model": "prefetch_related.pizza",
+    "pk": 3,
+    "fields": {
+      "name": "Funghi",
+      "toppings": [1, 5]
+    }
+  },
+  {
+    "model": "prefetch_related.pizza",
+    "pk": 4,
+    "fields": {
+      "name": "Plain Cheese",
+      "toppings": [1]
+    }
+  },
+  {
+    "model": "prefetch_related.restaurant",
+    "pk": 1,
+    "fields": {
+      "pizzas": [1, 2, 3],
+      "best_pizza": 1
+    }
+  },
+  {
+    "model": "prefetch_related.restaurant",
+    "pk": 2,
+    "fields": {
+      "pizzas": [2, 4],
+      "best_pizza": 2
+    }
+  },
+  {
+    "model": "prefetch_related.restaurant",
+    "pk": 3,
+    "fields": {
+      "pizzas": [1, 2, 3, 4],
+      "best_pizza": 3
+    }
+  }
+]
