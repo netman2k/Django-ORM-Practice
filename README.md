@@ -28,12 +28,11 @@ Restaurant 3's `best_pizza` is not in its `pizzas` list, which is useful for edg
 python manage.py loaddata prefetch_related_data
 ```
 
-> **Note:** `Restaurant` is defined in `prefetch_related/models.py` but is missing from `prefetch_related/migrations/0001_initial.py`. Create and apply a migration before loading the fixture:
->
-> ```
-> python manage.py makemigrations prefetch_related
-> python manage.py migrate
-> ```
+Make sure all migrations are applied before loading the fixture:
+
+```
+python manage.py migrate
+```
 
 
 
